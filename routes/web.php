@@ -25,11 +25,11 @@ Route::get('/dashboard', function () {
 
 Route::get('/user/dashboard', function () {
     return view('user.dashboard');
-})->middleware(['auth', 'verified'])->name('user.dashboard');
+})->middleware(['auth', 'verified','role:user'])->name('user.dashboard');
 
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('admin.dashboard');
+})->middleware(['auth', 'verified','role:admin'])->name('admin.dashboard');
 
 
 Route::middleware('auth')->group(function () {
