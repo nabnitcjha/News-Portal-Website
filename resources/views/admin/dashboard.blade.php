@@ -10,16 +10,16 @@
         <meta content="Coderthemes" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{asset('backend/assets/images/favicon.ico')}}">
 
         <!-- Bootstrap css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('backend/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- App css -->
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style"/>
+        <link href="{{asset('backend/assets/css/app.min.css')}}" rel="stylesheet" type="text/css" id="app-style"/>
         <!-- icons -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{asset('backend/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
         <!-- Head js -->
-        <script src="assets/js/head.js"></script>
+        <script src="{{'backend/assets/js/head.js'}}"></script>
 
     </head>
 
@@ -77,7 +77,7 @@
                                             <!-- item-->
                                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                                 <div class="d-flex align-items-start">
-                                                    <img class="d-flex me-2 rounded-circle" src="assets/images/users/user-2.jpg" alt="Generic placeholder image" height="32">
+                                                    <img class="d-flex me-2 rounded-circle" src="{{'backend/assets/images/users/user-2.jpg'}}" alt="Generic placeholder image" height="32">
                                                     <div class="w-100">
                                                         <h5 class="m-0 font-14">Erwin E. Brown</h5>
                                                         <span class="font-12 mb-0">UI Designer</span>
@@ -88,7 +88,7 @@
                                             <!-- item-->
                                             <a href="javascript:void(0);" class="dropdown-item notify-item">
                                                 <div class="d-flex align-items-start">
-                                                    <img class="d-flex me-2 rounded-circle" src="assets/images/users/user-5.jpg" alt="Generic placeholder image" height="32">
+                                                    <img class="d-flex me-2 rounded-circle" src="{{'backend/assets/images/users/user-5.jpg'}}" alt="Generic placeholder image" height="32">
                                                     <div class="w-100">
                                                         <h5 class="m-0 font-14">Jacob Deo</h5>
                                                         <span class="font-12 mb-0">Developer</span>
@@ -129,19 +129,19 @@
                                     <div class="row g-0">
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/slack.png" alt="slack">
+                                                <img src="{{'backend/assets/images/brands/slack.png'}}" alt="slack">
                                                 <span>Slack</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/github.png" alt="Github">
+                                                <img src="{{'backend/assets/images/brands/github.png'}}" alt="Github">
                                                 <span>GitHub</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                                <img src="{{'backend/assets/images/brands/dribbble.png'}}" alt="dribbble">
                                                 <span>Dribbble</span>
                                             </a>
                                         </div>
@@ -150,19 +150,19 @@
                                     <div class="row g-0">
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                                <img src="{{'backend/assets/images/brands/bitbucket.png'}}" alt="bitbucket">
                                                 <span>Bitbucket</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                                <img src="{{'backend/assets/images/brands/dropbox.png'}}" alt="dropbox">
                                                 <span>Dropbox</span>
                                             </a>
                                         </div>
                                         <div class="col">
                                             <a class="dropdown-icon-item" href="#">
-                                                <img src="assets/images/brands/g-suite.png" alt="G Suite">
+                                                <img src="{{'backend/assets/images/brands/g-suite.png'}}" alt="G Suite">
                                                 <span>G Suite</span>
                                             </a>
                                         </div>
@@ -175,28 +175,28 @@
     
                         <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
                             <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="assets/images/flags/us.jpg" alt="user-image" height="16">
+                                <img src="{{'backend/assets/images/flags/us.jpg'}}" alt="user-image" height="16">
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
     
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
+                                    <img src="{{'backend/assets/images/flags/germany.jpg'}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
                                 </a>
     
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
+                                    <img src="{{'backend/assets/images/flags/italy.jpg'}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
                                 </a>
     
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
+                                    <img src="{{'backend/assets/images/flags/spain.jpg'}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
                                 </a>
     
                                 <!-- item-->
                                 <a href="javascript:void(0);" class="dropdown-item">
-                                    <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
+                                    <img src="{{'backend/assets/images/flags/russia.jpg'}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
                                 </a>
     
                             </div>
@@ -225,7 +225,7 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item active">
                                         <div class="notify-icon">
-                                            <img src="assets/images/users/user-1.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <img src="{{'backend/assets/images/users/user-1.jpg'}}" class="img-fluid rounded-circle" alt="" /> </div>
                                         <p class="notify-details">Cristina Pride</p>
                                         <p class="text-muted mb-0 user-msg">
                                             <small>Hi, How are you? What about our next meeting</small>
@@ -245,7 +245,7 @@
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <div class="notify-icon">
-                                            <img src="assets/images/users/user-4.jpg" class="img-fluid rounded-circle" alt="" /> </div>
+                                            <img src="{{'backend/assets/images/users/user-4.jpg'}}" class="img-fluid rounded-circle" alt="" /> </div>
                                         <p class="notify-details">Karen Robinson</p>
                                         <p class="text-muted mb-0 user-msg">
                                             <small>Wow ! this admin looks good and awesome design</small>
@@ -295,7 +295,7 @@
     
                         <li class="dropdown notification-list topbar-dropdown">
                             <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="assets/images/users/user-1.jpg" alt="user-image" class="rounded-circle">
+                                <img src="{{'backend/assets/images/users/user-1.jpg'}}" alt="user-image" class="rounded-circle">
                                 <span class="pro-user-name ms-1">
                                     Geneva <i class="mdi mdi-chevron-down"></i> 
                                 </span>
@@ -347,21 +347,21 @@
                     <div class="logo-box">
                         <a href="index.html" class="logo logo-dark text-center">
                             <span class="logo-sm">
-                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                                <img src="{{'backend/assets/images/logo-sm.png'}}" alt="" height="22">
                                 <!-- <span class="logo-lg-text-light">UBold</span> -->
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="20">
+                                <img src="{{'backend/assets/images/logo-dark.png'}}" alt="" height="20">
                                 <!-- <span class="logo-lg-text-light">U</span> -->
                             </span>
                         </a>
     
                         <a href="index.html" class="logo logo-light text-center">
                             <span class="logo-sm">
-                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                                <img src="{{'backend/assets/images/logo-sm.png'}}" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-light.png" alt="" height="20">
+                                <img src="{{'backend/assets/images/logo-light.png'}}" alt="" height="20">
                             </span>
                         </a>
                     </div>
@@ -542,7 +542,7 @@
 
                     <!-- User box -->
                     <div class="user-box text-center">
-                        <img src="assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme"
+                        <img src="{{'backend/assets/images/users/user-1.jpg'}}" alt="user-img" title="Mat Helme"
                             class="rounded-circle avatar-md">
                         <div class="dropdown">
                             <a href="javascript: void(0);" class="text-dark dropdown-toggle h5 mt-2 mb-1 d-block"
@@ -1469,7 +1469,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <div class="avatar-lg">
-                                                    <img src="assets/images/users/user-3.jpg" class="img-fluid rounded-circle" alt="user-img">
+                                                    <img src="{{'backend/assets/images/users/user-3.jpg'}}" class="img-fluid rounded-circle" alt="user-img">
                                                 </div>
                                             </div>
                                             <div class="col">
@@ -1487,7 +1487,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <div class="avatar-lg">
-                                                    <img src="assets/images/users/user-4.jpg" class="img-fluid rounded-circle" alt="user-img">
+                                                    <img src="{{'backend/assets/images/users/user-4.jpg'}}" class="img-fluid rounded-circle" alt="user-img">
                                                 </div>
                                             </div>
                                             <div class="col">
@@ -1505,7 +1505,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <div class="avatar-lg">
-                                                    <img src="assets/images/users/user-5.jpg" class="img-fluid rounded-circle" alt="user-img">
+                                                    <img src="{{'backend/assets/images/users/user-5.jpg'}}" class="img-fluid rounded-circle" alt="user-img">
                                                 </div>
                                             </div>
                                             <div class="col">
@@ -1523,7 +1523,7 @@
                                         <div class="row align-items-center">
                                             <div class="col-auto">
                                                 <div class="avatar-lg">
-                                                    <img src="assets/images/users/user-6.jpg" class="img-fluid rounded-circle img-thumbnail" alt="user-img">
+                                                    <img src="{{'backend/assets/images/users/user-6.jpg'}}" class="img-fluid rounded-circle img-thumbnail" alt="user-img">
                                                 </div>
                                             </div>
                                             <div class="col">
@@ -1570,19 +1570,19 @@
                                                             <td id="tooltip-container">
                                                                 <div class="avatar-group">
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                        <img src="assets/images/users/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-1.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                        <img src="assets/images/users/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-2.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                        <img src="assets/images/users/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-3.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                        <img src="assets/images/users/user-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-5.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                                                                 </div>
                                                             </td>
@@ -1596,15 +1596,15 @@
                                                             <td>
                                                                 <div class="avatar-group">
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                        <img src="assets/images/users/user-3.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-3.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                        <img src="assets/images/users/user-4.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-4.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                        <img src="assets/images/users/user-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-5.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                                                                 </div>
                                                             </td>
@@ -1619,15 +1619,15 @@
                                                                 <div class="avatar-group">
                                                                     
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                        <img src="assets/images/users/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-2.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                        <img src="assets/images/users/user-6.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-6.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                        <img src="assets/images/users/user-7.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-7.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                                                                 </div>
                                                             </td>
@@ -1641,15 +1641,15 @@
                                                             <td>
                                                                 <div class="avatar-group">
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                        <img src="assets/images/users/user-9.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-9.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                        <img src="assets/images/users/user-10.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-10.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                        <img src="assets/images/users/user-1.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-1.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                                                                 </div>
                                                             </td>
@@ -1664,19 +1664,19 @@
                                                                 <div class="avatar-group">
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty">
-                                                                        <img src="assets/images/users/user-5.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-5.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson">
-                                                                        <img src="assets/images/users/user-8.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-8.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme">
-                                                                        <img src="assets/images/users/user-2.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-2.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                             
                                                                     <a href="javascript: void(0);" class="avatar-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Username">
-                                                                        <img src="assets/images/users/user-7.jpg" class="rounded-circle avatar-xs" alt="friend">
+                                                                        <img src="{{'backend/assets/images/users/user-7.jpg'}}" class="rounded-circle avatar-xs" alt="friend">
                                                                     </a>
                                                                 </div>
                                                             </td>
@@ -1791,7 +1791,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-10.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-10.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1806,7 +1806,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-1.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-1.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status away"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1821,7 +1821,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-9.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-9.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status busy"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1840,7 +1840,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-2.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-2.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1855,7 +1855,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-4.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-4.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status away"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1870,7 +1870,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-5.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-5.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1885,7 +1885,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-6.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-6.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status online"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1900,7 +1900,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-7.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-7.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status busy"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -1915,7 +1915,7 @@
                             <a href="javascript: void(0);" class="text-reset notification-item">
                                 <div class="d-flex align-items-start noti-user-item">
                                     <div class="position-relative me-2">
-                                        <img src="assets/images/users/user-8.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                        <img src="{{'backend/assets/images/users/user-8.jpg'}}" class="rounded-circle avatar-sm" alt="user-pic">
                                         <i class="mdi mdi-circle user-status away"></i>
                                     </div>
                                     <div class="overflow-hidden">
@@ -2125,17 +2125,17 @@
         <div class="rightbar-overlay"></div>
 
         <!-- Vendor js -->
-        <script src="assets/js/vendor.min.js"></script>
+        <script src="{{'backend/assets/js/vendor.min.js'}}"></script>
 
         <!-- Plugins js -->
-        <script src="assets/libs/morris.js06/morris.min.js"></script>
-        <script src="assets/libs/raphael/raphael.min.js"></script>
+        <script src="{{'backend/assets/libs/morris.js06/morris.min.js'}}"></script>
+        <script src="{{'backend/assets/libs/raphael/raphael.min.js'}}"></script>
 
         <!-- Dashboard init-->
-        <script src="assets/js/pages/dashboard-4.init.js"></script>
+        <script src="{{'backend/assets/js/pages/dashboard-4.init.js'}}"></script>
 
         <!-- App js -->
-        <script src="assets/js/app.min.js"></script>
+        <script src="{{'backend/assets/js/app.min.js'}}"></script>
         
     </body>
 </html>
