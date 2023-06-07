@@ -28,8 +28,8 @@ Route::get('/user/dashboard', function () {
 })->middleware(['auth', 'verified','role:user'])->name('user.dashboard');
 
 Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified','role:admin'])->name('admin.dashboard');
+    return view('admin.index');
+})->middleware(['auth', 'verified','role:admin'])->name('admin.index');
 
 
 Route::middleware('auth')->group(function () {
