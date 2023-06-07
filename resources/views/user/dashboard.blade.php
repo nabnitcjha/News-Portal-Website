@@ -8,7 +8,7 @@
  
 <title>Easy News | Online New Portal </title>
  
-<link rel="shortcut icon" href="{{asset('frontend/assets/images/favicon.gif')}}" type="image/x-icon">
+<link rel="shortcut icon" href="{{asset('frontend/assets/images/favicon.gif')}}')}}" type="image/x-icon">
  
   
 <meta name="keywords" content="online newspaper, bangla news, news, bangla, newsportal">
@@ -116,7 +116,7 @@ img.emoji {
 <div class="col-lg-12 col-md-12">
 <div class="mobileLogo">
  <a href=" " title="NewsFlash">
-<img src="{{asset('assets/images/footer_logo.gif" alt="Logo" title="Logo">
+<img src="{{asset('assets/images/footer_logo.gif')}}" alt="Logo" title="Logo">
 </a>
 </div>
 <div class="stellarnav dark desktop"><a href="https://newssitedesign.com/newsflash/#" class="menu-toggle full"><span class="bars"><span></span><span></span><span></span></span> </a><ul id="menu-main-menu" class="menu"><li id="menu-item-89" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-89"><a href="https://newssitedesign.com/newsflash" aria-current="page"> <i class="fa-solid fa-house-user"></i>  Home</a></li>
@@ -166,34 +166,34 @@ img.emoji {
 <div class="scroll5-right">
 <marquee direction="left" scrollamount="5px" onmouseover="this.stop()" onmouseout="this.start()">
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20 </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20 </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20  </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20 </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20  </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20  </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20  </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20 </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20  </a>
 <a href=" ">
-<img src="{{asset('assets/images/favicon.gif" alt="Logo" title="Logo" width="30px" height="auto">
+<img src="{{asset('assets/images/favicon.gif')}}" alt="Logo" title="Logo" width="30px" height="auto">
 Pakistan bring back Hayden for T20  </a>
 </marquee>
 </div>
@@ -694,11 +694,11 @@ Pakistan bring back Hayden for T20  </a>
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 </div>
@@ -1062,11 +1062,11 @@ SPORTS </div>
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 </div>
@@ -1178,15 +1178,15 @@ SPORTS </div>
 <div class="container">
 <div class="row">
 <div class="col-lg-4 col-md-4">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-4 col-md-4">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-4 col-md-4">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 </div>
@@ -1329,11 +1329,11 @@ SPORTS </div>
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 </div>
@@ -1436,11 +1436,11 @@ SPORTS </div>
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 </div>
@@ -1573,11 +1573,11 @@ SPORTS </div>
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 </div>
@@ -1655,11 +1655,11 @@ If filmmakers recover their money from selling OTT, satellite and music rights, 
 <div class="container">
 <div class="row">
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 <div class="col-lg-6 col-md-6">
-<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif" alt="" width="100%" height="auto"></p>
+<div class="themesBazar_widget"> <div class="textwidget"><p><img loading="lazy" class="aligncenter size-full wp-image-74" src="{{asset('assets/images/biggapon-1.gif')}}" alt="" width="100%" height="auto"></p>
 </div>
 </div> </div>
 </div>
