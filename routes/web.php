@@ -32,7 +32,8 @@ Route::get('/admin/dashboard', function () {
     return view('admin.index');
 })->middleware(['auth', 'verified','role:admin'])->name('admin.index');
 
-Route::post('/admin/logout', [AdminController::class, 'logout'])->middleware(['auth', 'verified','role:admin'])->name('admin.logout');
+Route::post('/admin/logout', [AdminController::class, 'AdminLogout'])->middleware(['auth','role:admin'])->name('admin.logout');
+Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->middleware(['auth','role:admin'])->name('admin.login');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
