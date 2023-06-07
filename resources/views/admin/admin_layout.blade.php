@@ -31,11 +31,11 @@
 
             
             <!-- Topbar Start -->
-          
+            @include('admin.body.topbar')
             <!-- end Topbar -->
 
             <!-- ========== Left Sidebar Start ========== -->
-           
+            @include('admin.body.sidebarLeft')
             <!-- Left Sidebar End -->
 
             <!-- ============================================================== -->
@@ -48,7 +48,7 @@
                 <!-- end content -->
 
                 <!-- Footer Start -->
-              
+                    @include('admin.body.footer')
                 <!-- end Footer -->
 
             </div>
