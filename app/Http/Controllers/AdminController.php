@@ -24,4 +24,8 @@ class AdminController extends Controller
     public function AdminLogin(Request $request){
         return view('admin.admin_login');
     }
+
+    public function AdminLogoutPage(Request $request){
+        return view('admin.logout.page');
+    }
 }
