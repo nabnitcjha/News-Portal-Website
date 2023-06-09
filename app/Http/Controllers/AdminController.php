@@ -26,6 +26,6 @@ class AdminController extends Controller
     }
 
     public function AdminLogoutPage(Request $request){
-        return view('admin.logout.page');
+        return view('admin.admin_logout_page');
     }
 }
