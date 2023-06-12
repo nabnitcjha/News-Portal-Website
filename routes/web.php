@@ -37,7 +37,7 @@ Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->middleware('
 Route::get('/admin/register', [AdminController::class, 'AdminRegister'])->middleware('guest')->name('admin.register');
 Route::get('/admin/logout/page', [AdminController::class, 'AdminLogoutPage'])->middleware('guest')->name('admin.logout.page');
 
-Route::get('/admin/profile', [AdminController::class, 'AdminProfile'])->middleware(['auth','guest','role:admin'])->name('admin.profile');
+Route::get('/admin/profile', [AdminController::class, 'AdminProfile'])->middleware(['auth','role:admin'])->name('admin.profile');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

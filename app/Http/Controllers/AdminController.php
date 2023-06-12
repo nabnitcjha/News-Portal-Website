@@ -34,6 +34,7 @@ class AdminController extends Controller
     }
 
     public function AdminProfile(){
+        
         return view('admin.admin_profile');
     }
 }
