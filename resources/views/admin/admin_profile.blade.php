@@ -6,7 +6,7 @@
  <div class="container-fluid">
 
  </div>
-        <h1>hello admin profile</h1>
+        <h1>Admin Name: {{$adminData->name}}</h1>
 </div> 
 
 @endSection
