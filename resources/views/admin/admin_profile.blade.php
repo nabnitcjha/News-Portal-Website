@@ -54,25 +54,18 @@
                 </div>                                 
             </div> <!-- end card -->
 
-            
-
         </div> <!-- end col-->
 
         <div class="col-lg-8 col-xl-8">
             <div class="card">
                 <div class="card-body">
                     <ul class="nav nav-pills nav-fill navtab-bg">
-                        
                         <li class="nav-item">
                             <a href="#settings" data-bs-toggle="tab" aria-expanded="false" class="nav-link">
                                 Settings
                             </a>
                         </li>
                     </ul>
-                    <div class="tab-content">
-                      
-
-                        
 
                         <div class="tab-pane" id="settings">
                             <form>
