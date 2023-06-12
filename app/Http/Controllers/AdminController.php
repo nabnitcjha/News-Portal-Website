@@ -32,4 +32,9 @@ class AdminController extends Controller
     public function AdminRegister(Request $request){
         return view('admin.admin_register');
     }
+
+    public function AdminProfile(){
+        return view('admin.admin_profile');
+    }
 }
+
