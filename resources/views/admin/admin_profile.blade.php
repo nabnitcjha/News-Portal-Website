@@ -30,8 +30,8 @@
                     <img src="{{asset('backend/assets/images/users/user-1.jpg')}}" class="rounded-circle avatar-lg img-thumbnail"
                     alt="profile-image">
 
-                    <h4 class="mb-0">Geneva McKnight</h4>
-                    <p class="text-muted">@webdesigner</p>
+                    <h4 class="mb-0">{{$adminData->name}}</h4>
+                    <p class="text-muted">@ {{$adminData->username}}</p>
 
                     <button type="button" class="btn btn-success btn-xs waves-effect mb-2 waves-light">Follow</button>
                     <button type="button" class="btn btn-danger btn-xs waves-effect mb-2 waves-light">Message</button>
