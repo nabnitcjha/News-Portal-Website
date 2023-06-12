@@ -32,10 +32,6 @@
                         @else
                         <img src="{{ asset('backend/assets/images/users/user-1.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                         @endif
-
-
-
-
                         <h4 class="mb-0">{{ $adminData->name }}</h4>
                         <p class="text-muted">@ {{ $adminData->username }}</p>
 
