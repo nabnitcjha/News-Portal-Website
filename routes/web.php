@@ -30,7 +30,7 @@ Route::get('/user/dashboard', function () {
 
 Route::get('/admin/dashboard', function () {
     return view('admin.index');
-})->middleware(['auth', 'verified','role:admin'])->name('admin.index');
+})->middleware(['auth', 'verified','role:admin'])->name('admin.dashboard');
 
 Route::post('/admin/logout', [AdminController::class, 'AdminLogout'])->middleware(['auth','role:admin'])->name('admin.logout');
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->middleware('guest')->name('admin.login');
