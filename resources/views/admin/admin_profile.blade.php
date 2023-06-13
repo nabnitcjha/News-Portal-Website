@@ -58,7 +58,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="tab-pane" id="settings">
-                            <form method="POST" action="{{ url('/admin/profile') }}" class="needs-validation" novalidate>
+                            <form method="POST" action="{{ url('/admin/profile/update') }}" class="needs-validation" novalidate>
                                 @csrf
                                 <h5 class="mb-4 text-uppercase"><i class="mdi mdi-account-circle me-1"></i>Admin
                                     Personal Info</h5>
