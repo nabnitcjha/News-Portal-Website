@@ -63,7 +63,7 @@
                                 <h5 class="mb-4 text-uppercase"><i class="mdi mdi-account-circle me-1"></i>Admin
                                     Personal Info</h5>
                                 <div class="row">
-                
+
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label for="username" class="form-label">User Name</label>
@@ -77,6 +77,12 @@
                                             <input type="text" class="form-control invisible" id="user_id" name="user_id" value="{{$adminData->id}}">
                                         </div>
                                     </div> <!-- end col -->
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Phone</label>
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone" value="{{$adminData->phone}}">
+                                        </div>
+                                    </div>
                                 </div> <!-- end row -->
 
                                 <div class="text-end">
