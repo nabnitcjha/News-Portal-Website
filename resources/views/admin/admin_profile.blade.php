@@ -58,20 +58,27 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="tab-pane" id="settings">
-                            <form>
+                            <form method="POST" action="{{ url('/admin/profile') }}" class="needs-validation" novalidate>
+                                @csrf
                                 <h5 class="mb-4 text-uppercase"><i class="mdi mdi-account-circle me-1"></i>Admin
                                     Personal Info</h5>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label for="firstname" class="form-label">First Name</label>
-                                            <input type="text" class="form-control" id="firstname" placeholder="Enter first name">
+                                        <div class="mb-3 hidden">
+                                            <label for="user_id" class="form-label">User ID</label>
+                                            <input type="text" class="form-control" id="user_id" name="user_id" value="{{$adminData->id}}">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label for="lastname" class="form-label">Last Name</label>
-                                            <input type="text" class="form-control" id="lastname" placeholder="Enter last name">
+                                            <label for="username" class="form-label">User Name</label>
+                                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter user name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label"> Name</label>
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter  name">
                                         </div>
                                     </div> <!-- end col -->
                                 </div> <!-- end row -->
