@@ -67,13 +67,13 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label for="username" class="form-label">User Name</label>
-                                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter user name">
+                                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter user name" value="{{$adminData->username}}">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label for="name" class="form-label"> Name</label>
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter  name">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter  name" value="{{$adminData->name}}">
                                             <input type="text" class="form-control invisible" id="user_id" name="user_id" value="{{$adminData->id}}">
                                         </div>
                                     </div> <!-- end col -->
