@@ -79,6 +79,13 @@
                                     </div> <!-- end col -->
                                     <div class="col-md-6">
                                         <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="text" class="form-control" id="email" name="email" placeholder="Enter email" value="{{$adminData->email}}">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
                                             <label for="phone" class="form-label">Phone</label>
                                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone" value="{{$adminData->phone}}">
                                         </div>
