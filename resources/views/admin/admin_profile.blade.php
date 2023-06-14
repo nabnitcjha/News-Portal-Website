@@ -58,7 +58,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="tab-pane" id="settings">
-                            <form method="POST" action="{{ url('/admin/profile/update') }}" class="needs-validation" novalidate  enctype="multipart/form-data">
+                            <form method="POST" action="{{ url('/admin/profile/update') }}" class="needs-validation" novalidate enctype="multipart/form-data">
                                 @csrf
                                 <h5 class="mb-4 text-uppercase"><i class="mdi mdi-account-circle me-1"></i>Admin
                                     Personal Info</h5>
@@ -90,10 +90,13 @@
                                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone" value="{{$adminData->phone}}">
                                         </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="photo" class="form-label">Photo</label>
-                                        <input type="file" id="photo" class="form-control" name="avatar">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="photo" class="form-label">Photo</label>
+                                            <input type="file" id="photo" class="form-control" name="avatar">
+                                        </div>
                                     </div>
+
 
                                 </div>
                         </div> <!-- end row -->
