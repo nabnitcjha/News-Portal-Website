@@ -95,6 +95,11 @@
                                             <label for="photo" class="form-label">Photo</label>
                                             <input type="file" id="photo" class="form-control" name="avatar">
                                         </div>
+                                        @if ($adminData->photo == null)
+                                        <img src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                        @else
+                                        <img src="{{ asset('storage/'.$adminData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                        @endif
                                     </div>
 
 
