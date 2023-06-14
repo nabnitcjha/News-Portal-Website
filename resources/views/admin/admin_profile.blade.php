@@ -96,9 +96,9 @@
                                             <input type="file" id="photo" class="form-control" name="avatar">
                                         </div>
                                         @if ($adminData->photo == null)
-                                        <img src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                        <img id="showImage" src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                                         @else
-                                        <img src="{{ asset('storage/'.$adminData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                        <img id="showImage" src="{{ asset('storage/'.$adminData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                                         @endif
                                     </div>
 
@@ -124,4 +124,27 @@
 </div> <!-- container -->
 
 </div> <!-- content -->
+
+<script type=text/javascript>
+    var fileTag = document.getElementById("photo"),
+        preview = document.getElementById("showImage");
+
+    fileTag.addEventListener("change", function() {
+        changeImage(this);
+    });
+
+    function changeImage(input) {
+        var reader;
+
+        if (input.files && input.files[0]) {
+            reader = new FileReader();
+
+            reader.onload = function(e) {
+                preview.setAttribute('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
 @endSection
