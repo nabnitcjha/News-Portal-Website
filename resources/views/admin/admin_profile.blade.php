@@ -30,7 +30,7 @@
                         @if ($adminData->photo == null)
                         <img src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                         @else
-                        <img src="{{ asset('backend/assets/images/users/user-1.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                        <img src="{{ asset('storage/'.$adminData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                         @endif
                         <h4 class="mb-0">{{ $adminData->name }}</h4>
                         <p class="text-muted">@ {{ $adminData->username }}</p>
@@ -58,7 +58,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="tab-pane" id="settings">
-                            <form method="POST" action="{{ url('/admin/profile/update') }}" class="needs-validation" novalidate>
+                            <form method="POST" action="{{ url('/admin/profile/update') }}" class="needs-validation" novalidate  enctype="multipart/form-data">
                                 @csrf
                                 <h5 class="mb-4 text-uppercase"><i class="mdi mdi-account-circle me-1"></i>Admin
                                     Personal Info</h5>
@@ -90,22 +90,28 @@
                                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone" value="{{$adminData->phone}}">
                                         </div>
                                     </div>
-                                </div> <!-- end row -->
+                                    <div class="mb-3">
+                                        <label for="photo" class="form-label">Photo</label>
+                                        <input type="file" id="photo" class="form-control" name="avatar">
+                                    </div>
 
-                                <div class="text-end">
-                                    <button type="submit" class="btn btn-success waves-effect waves-light mt-2"><i class="mdi mdi-content-save"></i> Save</button>
                                 </div>
-                            </form>
+                        </div> <!-- end row -->
+
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-success waves-effect waves-light mt-2"><i class="mdi mdi-content-save"></i> Save</button>
                         </div>
-                        <!-- end settings content-->
+                        </form>
+                    </div>
+                    <!-- end settings content-->
 
-                    </div> <!-- end tab-content -->
-                </div>
-            </div> <!-- end card-->
+                </div> <!-- end tab-content -->
+            </div>
+        </div> <!-- end card-->
 
-        </div> <!-- end col -->
-    </div>
-    <!-- end row-->
+    </div> <!-- end col -->
+</div>
+<!-- end row-->
 
 </div> <!-- container -->
 
