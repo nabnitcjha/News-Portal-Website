@@ -57,6 +57,11 @@ class AdminController extends Controller
             $adminData->photo = $path;
         }
         $adminData->save();
-        return view('admin.admin_profile', compact('adminData'));
+
+        $notification = array(
+            'message'=>'I love Sonu Jha',
+            'alert-type'=>'success'
+        );
+        return view('admin.admin_profile', compact('adminData','notification'));
     }
 }
