@@ -58,23 +58,12 @@ class AdminController extends Controller
         }
         $adminData->save();
 
-        return back()->with('success', 'Success! User created');
+        return back()->with('admin-updated', 'Success! Admin Updated Successfully');
         
         // $notification = array(
         //     'message'=>'I love Sonu Jha',
         //     'alert-type'=>'success'
         // );
         // return view('admin.admin_profile', compact('adminData','notification'));
-
- 
-
-        $user = User::all();
-
-        if ($user) {
-            return back()->with('success', 'Success! User created');
-        }
-        else {
-            return back()->with('error', 'Failed! User not created');
-        }
     }
 }
