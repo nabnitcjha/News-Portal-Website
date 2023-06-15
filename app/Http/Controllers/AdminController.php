@@ -58,12 +58,14 @@ class AdminController extends Controller
         }
         $adminData->save();
 
-        return back()->with('admin-updated', 'Success! Admin Updated Successfully');
+        // return back()->with('admin-updated', 'Success! Admin Updated Successfully');
         
-        // $notification = array(
-        //     'message'=>'I love Sonu Jha',
-        //     'alert-type'=>'success'
-        // );
+        $notification = array(
+            'message'=>'Admin Updated Successfully',
+            'alert-type'=>'info'
+        );
+
+        return back()->with($notification);
         // return view('admin.admin_profile', compact('adminData','notification'));
     }
 }
