@@ -52,8 +52,10 @@ class AdminController extends Controller
         $adminData->username = $request->username;
         $adminData->name = $request->name;
         if ($request->hasFile('avatar')) {
+            $timestamp = date('YmdHi');
             $extention =$request->file('avatar')->extension();
-            $path = $request->file('avatar')->storeAs('avatars',auth()->user()->id.'.'.$extention,'public');
+            $filename = auth()->user()->id.'.'.$timestamp.'.'.$extention;
+            $path = $request->file('avatar')->storeAs('avatars',$filename,'public');
             $adminData->photo = $path;
         }
         $adminData->save();
