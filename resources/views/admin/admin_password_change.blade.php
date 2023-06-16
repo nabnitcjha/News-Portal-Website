@@ -45,7 +45,7 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label for="password_confirmation" class="form-label"> Confirm Password</label>
-                                            <input type="text" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Enter  password_confirmation">
+                                            <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="Enter  password_confirmation">
                                             <input type="text" class="form-control invisible" id="user_id" name="user_id" value="{{$adminData->id}}">
                                         </div>
                                     </div> <!-- end col -->
