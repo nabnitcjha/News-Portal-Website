@@ -73,7 +73,7 @@ class AdminController extends Controller
             return back()->with($notification);
         } catch (\Throwable $th) {
             $notification = array(
-                'message'=>'Password not match',
+                'message'=> 'Unable to process request.Error:'.json_encode($th->getMessage(), true),
                 'alert-type'=>'warning'
             );
     
