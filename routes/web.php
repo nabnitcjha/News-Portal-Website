@@ -28,9 +28,7 @@ Route::get('/user/dashboard', function () {
     return view('user.dashboard');
 })->middleware(['auth', 'verified','role:user'])->name('user.dashboard');
 
-Route::get('/admin/dashboard', function () {
-    return view('admin.index');
-})->middleware(['auth', 'verified','role:admin'])->name('admin.dashboard');
+Route::get('/admin/dashboard', [AdminController::class, 'adminDashboard'])->middleware(['auth', 'verified','role:admin'])->name('admin.dashboard');
 
 Route::post('/admin/logout', [AdminController::class, 'AdminLogout'])->middleware(['auth','role:admin'])->name('admin.logout');
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->middleware('guest')->name('admin.login');
