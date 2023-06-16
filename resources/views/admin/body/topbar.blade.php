@@ -86,7 +86,7 @@
                 </a>
             </li>
 
-        
+
 
             <li class="dropdown d-none d-lg-inline-block topbar-dropdown">
                 <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -212,9 +212,14 @@
 
             <li class="dropdown notification-list topbar-dropdown">
                 <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <img src="{{asset('backend/assets/images/users/user-1.jpg')}}" alt="user-image" class="rounded-circle">
+                    @if ($adminData->photo == null)
+                    <img id="showImage" src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                    @else
+                    <img id="showImage" src="{{ asset('storage/'.$adminData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                    @endif
+                    <!-- <img src="{{asset('backend/assets/images/users/user-1.jpg')}}" alt="user-image" class="rounded-circle"> -->
                     <span class="pro-user-name ms-1">
-                        Geneva <i class="mdi mdi-chevron-down"></i>
+                        {{$adminData->name}} <i class="mdi mdi-chevron-down"></i>
                     </span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end profile-dropdown ">
@@ -224,7 +229,7 @@
                     </div>
 
                     <!-- item-->
-                    <a  href="{{route('admin.profile')}}" class="dropdown-item notify-item">
+                    <a href="{{route('admin.profile')}}" class="dropdown-item notify-item">
                         <i class="fe-user"></i>
                         <span>My Account</span>
                     </a>
@@ -244,7 +249,7 @@
                     <div class="dropdown-divider"></div>
 
                     <!-- item-->
-                    <a class="dropdown-item notify-item"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <a class="dropdown-item notify-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                         <i class="fe-log-out"></i>
                         <span>Logout</span>
                     </a>
@@ -305,7 +310,7 @@
                 </a>
                 <!-- End mobile menu toggle-->
             </li>
- 
+
         </ul>
         <div class="clearfix"></div>
     </div>
