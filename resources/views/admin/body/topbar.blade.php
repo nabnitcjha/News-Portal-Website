@@ -247,7 +247,7 @@
                     </a>
 
                     <!-- item-->
-                    <a href="{{asset('admin.password.change.page')}}" class="dropdown-item notify-item">
+                    <a href="{{route('admin.password.change.page')}}" class="dropdown-item notify-item">
                         <i class="fe-lock"></i>
                         <span>Change Password</span>
                     </a>
