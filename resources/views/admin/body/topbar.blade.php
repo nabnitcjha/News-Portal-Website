@@ -246,6 +246,12 @@
                         <span>Lock Screen</span>
                     </a>
 
+                    <!-- item-->
+                    <a href="{{asset('admin.password.change.page')}}" class="dropdown-item notify-item">
+                        <i class="fe-lock"></i>
+                        <span>Change Password</span>
+                    </a>
+
                     <div class="dropdown-divider"></div>
 
                     <!-- item-->

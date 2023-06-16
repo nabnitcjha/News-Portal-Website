@@ -45,6 +45,17 @@ class AdminController extends Controller
         return view('admin.admin_profile', compact('adminData'));
     }
 
+    public function AdminPasswordChangePage()
+    {
+        return view('admin.admin_password_change');
+    }
+
+
+    public function AdminPasswordChange()
+    {
+        return view('admin.admin_password_change');
+    }
+
     public function AdminProfileUpdate(Request $request)
     {
 
