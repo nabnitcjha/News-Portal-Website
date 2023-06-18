@@ -62,14 +62,14 @@
 
 
 
-	@include('frontend.body.header')
+		@include('frontend.body.header')
 
-	@include('frontend.body.breaking_news')
+		@include('frontend.body.breaking_news')
 
-	
-	@yield('user_content')
 
-	@include('frontend.body.footer')
+		@yield('user_content')
+
+		@include('frontend.body.footer')
 
 	</div>
 	<script src="{{asset('frontend/assets/regenerator-runtime.min.js')}}" id="regenerator-runtime-js"></script>
