@@ -13,22 +13,23 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action=" " method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-                            <div style="display: none"></div>
+                        <form  action="{{ route('login') }}" method="post" class="wpcf7-form init"  novalidate="novalidate" data-status="init">
+                        @csrf
+                        <div style="display: none"></div>
 
                             <div class="main_section">
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12">
                                         <div class="contact-title">Email *</div>
                                         <div class="contact-form">
-                                            <span class="wpcf7-form-control-wrap sub_title"><input type="text" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email" /></span>
+                                            <span class="wpcf7-form-control-wrap sub_title"><input type="email" id="email" name="email" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email" /></span>
                                         </div>
                                     </div>
 
                                     <div class="col-md-12 col-sm-12">
                                         <div class="contact-title">Password *</div>
                                         <div class="contact-form">
-                                            <span class="wpcf7-form-control-wrap sub_title"><input type="text" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Password" /></span>
+                                            <span class="wpcf7-form-control-wrap sub_title"><input type="password" name="password" id="password" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Password" /></span>
                                         </div>
                                     </div>
                                 </div>
