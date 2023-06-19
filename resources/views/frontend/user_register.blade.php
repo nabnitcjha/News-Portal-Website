@@ -20,29 +20,30 @@
                     <ul></ul>
                   </div>
                   <form
-                    action=" "
+                  action="{{ route('register') }}"
                     method="post"
                     class="wpcf7-form init"
-                    enctype="multipart/form-data"
                     novalidate="novalidate"
                     data-status="init"
                   >
+                  @csrf
                     <div style="display: none"></div>
 
                     <div class="main_section">
                       <div class="row">
                         <div class="col-md-12 col-sm-12">
-                          <div class="contact-title">UserName *</div>
+                          <div class="contact-title">Name *</div>
                           <div class="contact-form">
                             <span class="wpcf7-form-control-wrap sub_title"
                               ><input
                                 type="text"
-                                name="sub_title"
+                                id="name"
                                 value=""
                                 size="40"
                                 class="wpcf7-form-control wpcf7-text"
                                 aria-invalid="false"
-                                placeholder="UserName"
+                                placeholder="Name"
+                                type="text" name="name" :value="old('name')" required autofocus autocomplete="name"
                             /></span>
                           </div>
                         </div>
@@ -52,13 +53,14 @@
                           <div class="contact-form">
                             <span class="wpcf7-form-control-wrap sub_title"
                               ><input
-                                type="text"
+                                id="email"
                                 name="sub_title"
                                 value=""
                                 size="40"
                                 class="wpcf7-form-control wpcf7-text"
                                 aria-invalid="false"
                                 placeholder="Email"
+                                type="email" name="email" :value="old('email')" required autocomplete="username"
                             /></span>
                           </div>
                         </div>
@@ -68,13 +70,14 @@
                           <div class="contact-form">
                             <span class="wpcf7-form-control-wrap sub_title"
                               ><input
-                                type="text"
+                                type="password"
                                 name="sub_title"
                                 value=""
                                 size="40"
                                 class="wpcf7-form-control wpcf7-text"
                                 aria-invalid="false"
                                 placeholder="Password"
+                                type="password" name="password"  required
                             /></span>
                           </div>
                         </div>
@@ -84,13 +87,14 @@
                           <div class="contact-form">
                             <span class="wpcf7-form-control-wrap sub_title"
                               ><input
-                                type="text"
+                                id="password"
                                 name="sub_title"
                                 value=""
                                 size="40"
                                 class="wpcf7-form-control wpcf7-text"
                                 aria-invalid="false"
                                 placeholder="Confirm Password"
+                                type="password" name="password_confirmation" required
                             /></span>
                           </div>
                         </div>
