@@ -14,7 +14,7 @@
 
 
                             <figure class="authorPage-image">
-                                <img alt="" src="assets/images/lazy.jpg" class="avatar avatar-96 photo" height="96" width="96" loading="lazy">
+                                <img alt=""  src="{{asset('frontend/assets/images/lazy.jpg')}}" class="avatar avatar-96 photo" height="96" width="96" loading="lazy">
                             </figure>
                             <h1 class="authorPage-name">
                                 <a href=" "> Kazi Ariyan </a>
