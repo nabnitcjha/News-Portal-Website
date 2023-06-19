@@ -44,6 +44,10 @@ Route::post('/admin/profile/update', [AdminController::class, 'AdminProfileUpdat
 Route::get('/admin/passwordChange/page', [AdminController::class, 'AdminPasswordChangePage'])->middleware(['auth','role:admin'])->name('admin.password.change.page');
 Route::post('/admin/password/change', [AdminController::class, 'AdminPasswordChange'])->middleware(['auth','role:admin'])->name('admin.password.change');
 
+Route::get('/user/login', [UserController::class, 'UserLogin'])->middleware('guest')->name('user.login');
+Route::get('/user/register', [UserController::class, 'UserRegister'])->middleware('guest')->name('user.register');
+Route::get('/user/logout', [UserController::class, 'UserLogout'])->middleware('guest')->name('user.logout');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
