@@ -72,7 +72,7 @@
                                                     User Name *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="text" name="name" id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="text" value="{{$userData->name}}" name="name" id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name"></span>
                                                 </div>
                                             </div>
 
@@ -83,7 +83,7 @@
                                                     Email *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="email" name="email"  id="email" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="email" value="{{$userData->email}}" name="email"  id="email" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email"></span>
                                                 </div>
                                             </div>
 
@@ -92,7 +92,7 @@
                                                     Phone *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="phone" name="phone" id="phone" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Phone"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="phone" value="{{$userData->phone}}" name="phone" id="phone" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Phone"></span>
                                                 </div>
                                             </div>
 
