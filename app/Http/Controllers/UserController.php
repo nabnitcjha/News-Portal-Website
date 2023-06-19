@@ -11,7 +11,7 @@ class UserController extends Controller
     public function userDashboard()
     {
         // $userData = User::find(auth()->user()->id);
-        return view('frontend.index');
+        return view('dashboard');
     }
 
     public function UserLogin()
