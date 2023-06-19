@@ -22,14 +22,14 @@
                                     <div class="col-md-12 col-sm-12">
                                         <div class="contact-title">Name *</div>
                                         <div class="contact-form">
-                                            <span class="wpcf7-form-control-wrap sub_title"><input type="text" id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" /></span>
+                                            <span class="wpcf7-form-control-wrap sub_title"><input  id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" type="text" name="name" /></span>
                                         </div>
                                     </div>
 
                                     <div class="col-md-12 col-sm-12">
                                         <div class="contact-title">Email *</div>
                                         <div class="contact-form">
-                                            <span class="wpcf7-form-control-wrap sub_title"><input id="email" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email" type="email" name="email" :value="old('email')" required autocomplete="username" /></span>
+                                            <span class="wpcf7-form-control-wrap sub_title"><input id="email" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email" type="email" name="email" /></span>
                                         </div>
                                     </div>
 
@@ -43,7 +43,7 @@
                                     <div class="col-md-12 col-sm-12">
                                         <div class="contact-title">Confirm Password *</div>
                                         <div class="contact-form">
-                                            <span class="wpcf7-form-control-wrap sub_title"><input id="password" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Confirm Password" type="password" name="password_confirmation" required /></span>
+                                            <span class="wpcf7-form-control-wrap sub_title"><input id="password_confirmation" name="password_confirmation" type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Confirm Password"   required /></span>
                                         </div>
                                     </div>
                                 </div>
