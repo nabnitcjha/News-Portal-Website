@@ -22,10 +22,10 @@
                                 <!-- <img alt="" src="{{asset('frontend/assets/images/lazy.jpg')}}" class="avatar avatar-96 photo" height="96" width="96" loading="lazy"> -->
                             </figure>
                             <h1 class="authorPage-name">
-                                <a href=" "> Kazi Ariyan </a>
+                                <a> {{$userData->name}} </a>
                             </h1>
                             <h6 class="authorPage-name">
-                                kazi@gmail.com
+                                 {{$userData->email}}
                             </h6>
 
 
