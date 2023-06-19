@@ -13,7 +13,7 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="{{ route('register') }}" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+                        <form action="{{ route('user.store') }}" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
                             @csrf
                             <div style="display: none"></div>
 
@@ -22,7 +22,7 @@
                                     <div class="col-md-12 col-sm-12">
                                         <div class="contact-title">Name *</div>
                                         <div class="contact-form">
-                                            <span class="wpcf7-form-control-wrap sub_title"><input  id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" type="text" name="name" /></span>
+                                            <span class="wpcf7-form-control-wrap sub_title"><input id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" type="text" name="name" /></span>
                                         </div>
                                     </div>
 
@@ -43,7 +43,7 @@
                                     <div class="col-md-12 col-sm-12">
                                         <div class="contact-title">Confirm Password *</div>
                                         <div class="contact-form">
-                                            <span class="wpcf7-form-control-wrap sub_title"><input id="password_confirmation" name="password_confirmation" type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Confirm Password"   required /></span>
+                                            <span class="wpcf7-form-control-wrap sub_title"><input id="password_confirmation" name="password_confirmation" type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Confirm Password" required /></span>
                                         </div>
                                     </div>
                                 </div>

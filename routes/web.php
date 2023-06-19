@@ -36,6 +36,7 @@ Route::get('/admin/dashboard', [AdminController::class, 'adminDashboard'])->midd
 Route::post('/admin/logout', [AdminController::class, 'AdminLogout'])->middleware(['auth','role:admin'])->name('admin.logout');
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->middleware('guest')->name('admin.login');
 Route::get('/admin/register', [AdminController::class, 'AdminRegister'])->middleware('guest')->name('admin.register');
+Route::post('/admin/register', [AdminController::class, 'store'])->middleware('guest')->name('admin.store');
 Route::get('/admin/logout/page', [AdminController::class, 'AdminLogoutPage'])->middleware('guest')->name('admin.logout.page');
 
 Route::get('/admin/profile', [AdminController::class, 'AdminProfile'])->middleware(['auth','role:admin'])->name('admin.profile');
@@ -46,6 +47,7 @@ Route::post('/admin/password/change', [AdminController::class, 'AdminPasswordCha
 
 Route::get('/user/login', [UserController::class, 'UserLogin'])->middleware('guest')->name('user.login');
 Route::get('/user/register', [UserController::class, 'UserRegister'])->middleware('guest')->name('user.register');
+Route::post('/user/register', [UserController::class, 'store'])->middleware('guest')->name('user.store');
 Route::get('/user/logout', [UserController::class, 'UserLogout'])->middleware('guest')->name('user.logout');
 
 

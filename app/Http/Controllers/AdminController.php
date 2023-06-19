@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Validation\Rules\Password;
 
 class AdminController extends Controller
 {
@@ -13,6 +15,27 @@ class AdminController extends Controller
     {
         $adminData = User::find(auth()->user()->id);
         return view('admin.index', compact('adminData'));
+    }
+
+    public function store(Request $request){
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
+            'password' => ['required', 'confirmed', Password::defaults()],
+        ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'role' => 'admin',
+            'password' => Hash::make($request->password),
+        ]);
+
+        event(new Registered($user));
+
+        Auth::login($user);
+
+        return redirect(auth()->user()->getRedirectRoute());
     }
 
     public function AdminLogout(Request $request)
