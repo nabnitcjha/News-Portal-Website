@@ -13,8 +13,8 @@ class UserController extends Controller
 {
     public function userDashboard()
     {
-        // $userData = User::find(auth()->user()->id);
-        return view('dashboard');
+        $userData = User::find(auth()->user()->id);
+        return view('frontend.index',compact('userData'));
     }
 
     public function UserLogin()

@@ -24,12 +24,12 @@ Route::get('/', function () {
     return view('frontend.index');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 
-Route::get('/user/dashboard', [UserController::class,'userDashboard'])->name('user.dashboard');
+Route::get('/user/dashboard', [UserController::class,'userDashboard'])->middleware(['auth', 'verified','role:user'])->name('user.dashboard');
 
 Route::get('/admin/dashboard', [AdminController::class, 'adminDashboard'])->middleware(['auth', 'verified','role:admin'])->name('admin.dashboard');
 
