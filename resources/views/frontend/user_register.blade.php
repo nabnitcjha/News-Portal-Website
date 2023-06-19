@@ -13,42 +13,50 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="{{ route('user.store') }}" method="post">
+                        <form action="{{ route('user.store') }}" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
                             @csrf
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Full Name</label>
-                                <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email address</label>
-                                <input class="form-control" type="email" id="email" name="email" required placeholder="Enter your email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <div class="input-group input-group-merge">
-                                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password">
-                                    <div class="input-group-text" data-password="false">
-                                        <span class="password-eye"></span>
+                            <div style="display: none"></div>
+
+                            <div class="main_section">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="contact-title">Name *</div>
+                                        <div class="contact-form">
+                                            <span class="wpcf7-form-control-wrap sub_title"><input id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name" type="text" name="name" /></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="contact-title">Email *</div>
+                                        <div class="contact-form">
+                                            <span class="wpcf7-form-control-wrap sub_title"><input value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email" type="email" name="email" id="email"/></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="contact-title">Password *</div>
+                                        <div class="contact-form">
+                                            <span class="wpcf7-form-control-wrap sub_title"><input  value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Password" type="password" name="password" required id="password"/></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="contact-title">Confirm Password *</div>
+                                        <div class="contact-form">
+                                            <span class="wpcf7-form-control-wrap sub_title"><input id="password_confirmation" name="password_confirmation" type="password" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Confirm Password" required /></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="contact-btn">
+                                            <input type="submit" value="Register Now" class="wpcf7-form-control has-spinner wpcf7-submit" /><span class="wpcf7-spinner"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
-                            <div class="mb-3">
-                                <label for="password_confirmation" class="form-label">Confirm Password</label>
-                                <div class="input-group input-group-merge">
-                                    <input type="password" id="password_confirmation" name="password_confirmation" class="form-control" placeholder="Enter   password_confirmation">
-                                    <div class="input-group-text" data-password="false">
-                                        <span class="password-eye"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="text-center d-grid">
-                                <button class="btn btn-success" type="submit"> Sign Up </button>
-                            </div>
-
+                            <div class="wpcf7-response-output" aria-hidden="true"></div>
                         </form>
                     </div>
                 </div>
