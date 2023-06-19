@@ -58,4 +58,30 @@ class UserController extends Controller
 
         return redirect('/user/dashboard');
     }
+
+    public function UserProfileUpdate(Request $request)
+    {
+        $userData = User::find(auth()->user()->id);
+        $userData->name = $request->name;
+        $userData->email = $request->email;
+        $userData->phone = $request->phone;
+
+        if ($request->hasFile('avatar')) {
+            $timestamp = date('YmdHi');
+            $extention =$request->file('avatar')->extension();
+            $filename = auth()->user()->id.'.'.$timestamp.'.'.$extention;
+            $path = $request->file('avatar')->storeAs('avatars',$filename,'public');
+            $userData->photo = $path;
+        }
+        $userData->save();
+
+        // return back()->with('admin-updated', 'Success! Admin Updated Successfully');
+        
+        $notification = array(
+            'message'=>'User Updated Successfully',
+            'alert-type'=>'info'
+        );
+
+        return back()->with($notification);
+    }
 }

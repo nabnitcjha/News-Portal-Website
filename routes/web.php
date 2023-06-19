@@ -42,6 +42,8 @@ Route::get('/admin/logout/page', [AdminController::class, 'AdminLogoutPage'])->m
 Route::get('/admin/profile', [AdminController::class, 'AdminProfile'])->middleware(['auth','role:admin'])->name('admin.profile');
 Route::post('/admin/profile/update', [AdminController::class, 'AdminProfileUpdate'])->middleware(['auth','role:admin'])->name('admin.profile.update');
 
+Route::post('/user/profile/update', [UserController::class, 'UserProfileUpdate'])->middleware(['auth','role:user'])->name('user.profile.update');
+
 Route::get('/admin/passwordChange/page', [AdminController::class, 'AdminPasswordChangePage'])->middleware(['auth','role:admin'])->name('admin.password.change.page');
 Route::post('/admin/password/change', [AdminController::class, 'AdminPasswordChange'])->middleware(['auth','role:admin'])->name('admin.password.change');
 

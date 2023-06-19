@@ -54,6 +54,9 @@
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 	<script charset="utf-8" src="{{asset('frontend/')}}assets/js/horizon_timeline.08c300ab95020b1109a05214ccb84dea.js"></script>
+	<!-- CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/css/toastr.css" rel="stylesheet" />
+
 </head>
 
 <body class="home blog" oncontextmenu="return true" data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="">
@@ -88,6 +91,35 @@
 	<script src="{{asset('frontend/assets/js/main.js')}}" id="newsflash-main-js"></script>
 
 	<script src="https://kit.fontawesome.com/97ff43f8ef.js" crossorigin="anonymous"></script>
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/js/toastr.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			toastr.options.timeOut = 10000;
+			@if(Session::has('message'))
+			var type = "{{ Session::get('alert-type','info') }}"
+			switch (type) {
+				case 'info':
+					toastr.info(" {{ Session::get('message') }} ");
+					break;
+
+				case 'success':
+					toastr.success(" {{ Session::get('message') }} ");
+					break;
+
+				case 'warning':
+					toastr.warning(" {{ Session::get('message') }} ");
+					break;
+
+				case 'error':
+					toastr.error(" {{ Session::get('message') }} ");
+					break;
+			}
+			@endif
+		});
+	</script>
 
 </body>
 

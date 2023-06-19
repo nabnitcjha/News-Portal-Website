@@ -25,7 +25,7 @@
                                 <a> {{$userData->name}} </a>
                             </h1>
                             <h6 class="authorPage-name">
-                                 {{$userData->email}}
+                                {{$userData->email}}
                             </h6>
 
 
@@ -34,6 +34,7 @@
                                 <li><a href=""><b>🟢 Your Profile </b></a> </li>
                                 <li> <a href=""> <b>🔵 Change Password </b> </a> </li>
                                 <li> <a href=""> <b>🟠Read Later List </b> </a> </li>
+                                <li><a href=""><b>🟢 Logout </b></a> </li>
                             </ul>
 
                         </div>
@@ -56,8 +57,9 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action=" " method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-                                    <div style="display: none;">
+                                <form action="route('user.profile.update') " method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+                                   @csrf
+                                <div style="display: none;">
 
                                     </div>
 
@@ -70,7 +72,7 @@
                                                     User Name *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="text" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="text" name="name" id="name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Name"></span>
                                                 </div>
                                             </div>
 
@@ -81,7 +83,7 @@
                                                     Email *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="text" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="email" name="email"  id="email" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email"></span>
                                                 </div>
                                             </div>
 
@@ -90,7 +92,7 @@
                                                     Phone *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="text" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Phone"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="phone" name="phone" id="phone" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Phone"></span>
                                                 </div>
                                             </div>
 
@@ -100,7 +102,7 @@
                                                     Photo *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="file" name="sub_title" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="file" name="avatar" id="photo" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span>
                                                 </div>
                                             </div>
 
