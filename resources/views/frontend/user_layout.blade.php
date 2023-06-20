@@ -63,9 +63,11 @@
 
 	<div class="main_website">
 
-
-
+		@if(!Auth::user())
 		@include('frontend.body.header')
+		@else
+		@endif
+
 
 		@include('frontend.body.breaking_news')
 
