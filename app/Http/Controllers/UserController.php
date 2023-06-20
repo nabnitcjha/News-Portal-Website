@@ -56,7 +56,6 @@ class UserController extends Controller
 
     public function UserLogout(Request $request)
     {
-        dd('hello');
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();
