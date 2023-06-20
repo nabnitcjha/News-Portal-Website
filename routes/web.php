@@ -52,6 +52,8 @@ Route::get('/user/login', [UserController::class, 'UserLogin'])->middleware('gue
 Route::get('/user/register', [UserController::class, 'UserRegister'])->middleware('guest')->name('user.register');
 Route::post('/user/register', [UserController::class, 'store'])->middleware('guest')->name('user.store');
 Route::post('/user/logout', [UserController::class, 'UserLogout'])->middleware(['auth','role:user'])->name('user.logout');
+Route::get('/user/passwordChange/page', [UserController::class, 'UserPasswordChangePage'])->middleware(['auth','role:user'])->name('user.password.change.page');
+Route::post('/user/password/change', [UserController::class, 'UserPasswordChange'])->middleware(['auth','role:user'])->name('user.password.change');
 
 
 Route::middleware('auth')->group(function () {

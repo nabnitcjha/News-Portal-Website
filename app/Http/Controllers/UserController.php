@@ -65,6 +65,42 @@ class UserController extends Controller
         return redirect('/');
     }
 
+    public function UserPasswordChangePage()
+    {
+        $userData = User::find(auth()->user()->id);
+        return view('frontend.user_password_change', compact('userData'));
+    }
+
+
+    public function UserPasswordChange(Request $request)
+    {
+        try {
+            $this->validate($request, [
+                'password' => 'required|confirmed',
+            ]);
+    
+            $userData = User::find($request->user_id);
+            $userData->password = Hash::make($request->password);
+            $userData->save();
+    
+             $notification = array(
+                'message'=>'User Password Change Successfully',
+                'alert-type'=>'warning'
+            );
+    
+            return back()->with($notification);
+        } catch (\Throwable $th) {
+            $notification = array(
+                'message'=> 'Unable to process request.Error:'.json_encode($th->getMessage(), true),
+                'alert-type'=>'warning'
+            );
+    
+            return back()->with($notification);
+        }
+       
+    }
+
+
     public function UserProfileUpdate(Request $request)
     {
         $userData = User::find(auth()->user()->id);
