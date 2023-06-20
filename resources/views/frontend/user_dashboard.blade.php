@@ -34,7 +34,13 @@
                                 <li><a href=""><b>🟢 Your Profile </b></a> </li>
                                 <li> <a href=""> <b>🔵 Change Password </b> </a> </li>
                                 <li> <a href=""> <b>🟠Read Later List </b> </a> </li>
-                                <li><a href=""><b>🟢 Logout </b></a> </li>
+                                <li><a onclick="event.preventDefault(); document.getElementById('user-logout-form').submit();"><b>🟢 Logout </b></a> </li>
+
+                                <li>
+                                    <form id="user-logout-form" action="{{ route('user.logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </li>
                             </ul>
 
                         </div>
@@ -57,7 +63,7 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form  action="{{ url('/user/profile/update') }}"  method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+                                <form action="{{ url('/user/profile/update') }}" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
                                     @csrf
                                     <div style="display: none;">
 
