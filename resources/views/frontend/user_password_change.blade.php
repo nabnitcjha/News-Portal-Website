@@ -17,11 +17,10 @@
                             <h6 class="authorPage-name">kazi@gmail.com</h6>
 
                             <ul>
+                            <li><a href="{{route('user.dashboard')}}"><b>🟢 Your Profile </b></a> </li>
+
                                 <li>
-                                    <a href=""><b>🟢 Your Profile </b></a>
-                                </li>
-                                <li>
-                                    <a href=""> <b>🔵 Change Password </b> </a>
+                                    <a href="{{route('user.password.change.page')}}"> <b>🔵 Change Password </b> </a>
                                 </li>
                                 <li>
                                     <a href=""> <b>🟠 Read Later List </b> </a>

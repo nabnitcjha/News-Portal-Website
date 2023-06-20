@@ -30,7 +30,7 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/', [UserController::class,'UserHome'])->middleware(['guest'])->name('user.home');
 
-Route::get('/user/dashboard', [UserController::class,'userDashboard'])->middleware(['auth', 'verified','role:user'])->name('user.dashboard');
+Route::get('/user/dashboard', [UserController::class,'userDashboard'])->middleware(['auth','role:user'])->name('user.dashboard');
 
 Route::get('/admin/dashboard', [AdminController::class, 'adminDashboard'])->middleware(['auth', 'verified','role:admin'])->name('admin.dashboard');
 
