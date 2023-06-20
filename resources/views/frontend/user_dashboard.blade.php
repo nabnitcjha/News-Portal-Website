@@ -107,7 +107,7 @@
                                                 @if ($userData->photo == null)
                                                 <img id="user_showImage" src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                                                 @else
-                                                <img id="user_showImage" src="{{ asset('storage/'.$adminData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                                <img id="user_showImage" src="{{ asset('storage/'.$userData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
                                                 @endif
                                             </div>
 
