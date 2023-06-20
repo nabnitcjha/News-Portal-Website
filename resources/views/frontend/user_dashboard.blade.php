@@ -57,9 +57,9 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action="route('user.profile.update') " method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-                                   @csrf
-                                <div style="display: none;">
+                                <form  action="{{ url('/user/profile/update') }}"  method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+                                    @csrf
+                                    <div style="display: none;">
 
                                     </div>
 
@@ -83,7 +83,7 @@
                                                     Email *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="email" value="{{$userData->email}}" name="email"  id="email" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="email" value="{{$userData->email}}" name="email" id="email" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Email"></span>
                                                 </div>
                                             </div>
 
@@ -102,8 +102,13 @@
                                                     Photo *
                                                 </div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="file" name="avatar" id="photo" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="file" name="avatar" id="user_photo" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span>
                                                 </div>
+                                                @if ($userData->photo == null)
+                                                <img id="user_showImage" src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                                @else
+                                                <img id="user_showImage" src="{{ asset('storage/'.$adminData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                                @endif
                                             </div>
 
 
@@ -140,4 +145,27 @@
 
     </div>
 </div>
+
+<script type=text/javascript>
+    var fileTag = document.getElementById("user_photo"),
+        preview = document.getElementById("user_showImage");
+
+    fileTag.addEventListener("change", function() {
+        changeImage(this);
+    });
+
+    function changeImage(input) {
+        var reader;
+
+        if (input.files && input.files[0]) {
+            reader = new FileReader();
+
+            reader.onload = function(e) {
+                preview.setAttribute('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
 @endSection
