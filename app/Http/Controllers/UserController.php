@@ -79,7 +79,7 @@ class UserController extends Controller
                 'password' => 'required|confirmed',
             ]);
     
-            $userData = User::find($request->user_id);
+            $userData = User::find(auth()->user()->id);
             $userData->password = Hash::make($request->password);
             $userData->save();
     
