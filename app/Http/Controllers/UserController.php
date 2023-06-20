@@ -11,6 +11,12 @@ use Illuminate\Validation\Rules\Password;
 
 class UserController extends Controller
 {
+
+    public function UserHome()
+    {
+        return view('frontend.index');
+    }
+
     public function userDashboard()
     {
         $userData = User::find(auth()->user()->id);

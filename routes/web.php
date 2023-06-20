@@ -20,14 +20,15 @@ use App\Http\Controllers\ProfileController;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+// Route::get('/', function () {
+//     return view('frontend.index');
+// })->middleware(['auth']);
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/', [UserController::class,'UserHome'])->middleware(['guest'])->name('user.home');
 
 Route::get('/user/dashboard', [UserController::class,'userDashboard'])->middleware(['auth', 'verified','role:user'])->name('user.dashboard');
 
