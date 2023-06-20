@@ -43,22 +43,18 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action=" " method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-                                    <div style="display: none"></div>
+                                <form  action="{{ url('/user/password/change') }}" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+                                @csrf    
+                                <div style="display: none"></div>
 
                                     <div class="main_section">
                                         <div class="row">
-                                            <div class="col-md-12 col-sm-12">
-                                                <div class="contact-title">Old Password *</div>
-                                                <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="password" name="sub_title" value="" size="40" class="form-control" aria-invalid="false" /></span>
-                                                </div>
-                                            </div>
+                                            
 
                                             <div class="col-md-12 col-sm-12">
                                                 <div class="contact-title">New Password *</div>
                                                 <div class="contact-form">
-                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="password" name="sub_title" value="" size="40" class="form-control" aria-invalid="false" /></span>
+                                                    <span class="wpcf7-form-control-wrap sub_title"><input type="password" name="password" id="password" value="" size="40" class="form-control" aria-invalid="false" /></span>
                                                 </div>
                                             </div>
 
@@ -68,7 +64,7 @@
                                                 </div>
                                                 <div class="contact-form">
                                                     <span class="wpcf7-form-control-wrap sub_title">
-                                                        <input type="password" name="sub_title" value="" size="40" class="form-control" aria-invalid="false" /></span>
+                                                        <input  type="password" name="password_confirmation" id="password_confirmation" value="" size="40" class="form-control" aria-invalid="false" /></span>
                                                 </div>
                                             </div>
                                         </div>
