@@ -9,15 +9,19 @@
                     <div class="col-lg-12 col-md-12">
                         <div class="contact-wrpp">
                             <figure class="authorPage-image">
-                                <img alt="" src="assets/images/lazy.jpg" class="avatar avatar-96 photo" height="96" width="96" loading="lazy" />
+                                @if ($userData->photo == null)
+                                <img id="showImage" src="{{ asset('upload/admin_image/no_image.jpg') }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                @else
+                                <img id="showImage" src="{{ asset('storage/'.$userData->photo )}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image">
+                                @endif
                             </figure>
                             <h1 class="authorPage-name">
-                                <a href=" "> Kazi Ariyan </a>
+                                <a href=" "> {{$userData->name}} </a>
                             </h1>
-                            <h6 class="authorPage-name">kazi@gmail.com</h6>
+                            <h6 class="authorPage-name">{{$userData->email}}</h6>
 
                             <ul>
-                            <li><a href="{{route('user.dashboard')}}"><b>🟢 Your Profile </b></a> </li>
+                                <li><a href="{{route('user.dashboard')}}"><b>🟢 Your Profile </b></a> </li>
 
                                 <li>
                                     <a href="{{route('user.password.change.page')}}"> <b>🔵 Change Password </b> </a>
@@ -43,13 +47,13 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form  action="{{ url('/user/password/change') }}" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
-                                @csrf    
-                                <div style="display: none"></div>
+                                <form action="{{ url('/user/password/change') }}" method="post" class="wpcf7-form init" enctype="multipart/form-data" novalidate="novalidate" data-status="init">
+                                    @csrf
+                                    <div style="display: none"></div>
 
                                     <div class="main_section">
                                         <div class="row">
-                                            
+
 
                                             <div class="col-md-12 col-sm-12">
                                                 <div class="contact-title">New Password *</div>
@@ -64,7 +68,7 @@
                                                 </div>
                                                 <div class="contact-form">
                                                     <span class="wpcf7-form-control-wrap sub_title">
-                                                        <input  type="password" name="password_confirmation" id="password_confirmation" value="" size="40" class="form-control" aria-invalid="false" /></span>
+                                                        <input type="password" name="password_confirmation" id="password_confirmation" value="" size="40" class="form-control" aria-invalid="false" /></span>
                                                 </div>
                                             </div>
                                         </div>
