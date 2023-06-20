@@ -51,7 +51,7 @@ Route::post('/admin/password/change', [AdminController::class, 'AdminPasswordCha
 Route::get('/user/login', [UserController::class, 'UserLogin'])->middleware('guest')->name('user.login');
 Route::get('/user/register', [UserController::class, 'UserRegister'])->middleware('guest')->name('user.register');
 Route::post('/user/register', [UserController::class, 'store'])->middleware('guest')->name('user.store');
-Route::post('/user/logout', [UserController::class, 'UserLogout'])->middleware(['guest','auth'])->name('user.logout');
+Route::post('/user/logout', [UserController::class, 'UserLogout'])->middleware(['auth','role:user'])->name('user.logout');
 
 
 Route::middleware('auth')->group(function () {
