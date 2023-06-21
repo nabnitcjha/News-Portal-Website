@@ -11,8 +11,8 @@ class CategoryController extends Controller
     public function CategoryAll()
     {
         $adminData = User::find(auth()->user()->id);
-        $category = Category::latest()->get();
-        return view('admin.category_all', compact(['adminData','category']));
+        $categories = Category::latest()->get();
+        return view('admin.category_all', compact(['adminData','categories']));
     }
 
     public function CategoryAddPage()
