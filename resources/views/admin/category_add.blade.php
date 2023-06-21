@@ -15,14 +15,11 @@
                     @csrf
 
                     <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <div class="col-md-6 mb-3"> 
+                            <label for="category_name" class="form-label">Name</label> 
+                            <input type="text" name="category_name" class="form-control" id="category_name" placeholder="category_name">
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="inputPassword4" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                        </div>
+                        
                     </div>
 
                     <button type="submit" class="btn btn-primary waves-effect waves-light">Save</button>
