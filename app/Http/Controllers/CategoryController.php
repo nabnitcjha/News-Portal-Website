@@ -27,6 +27,12 @@ class CategoryController extends Controller
         $category->category_name = $request->category_name;
         $category->category_slug = '/category';
         $category->save();
-        return redirect()->back();
+
+          $notification = array(
+                'message'=>'Category Save Successfully',
+                'alert-type'=>'warning'
+            );
+    
+            return back()->with($notification);
     }
 }
