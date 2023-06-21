@@ -28,10 +28,10 @@
                     <div class="collapse" id="sidebarContacts">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="contacts-list.html">All Category</a>
+                                <a href="{{route('category.all')}}">All Category</a>
                             </li>
                             <li>
-                                <a href="contacts-profile.html">Add Category</a>
+                                <a href="{{route('category.add')}}">Add Category</a>
                             </li>
                         </ul>
                     </div>

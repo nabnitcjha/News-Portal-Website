@@ -42,6 +42,9 @@ Route::get('/admin/logout/page', [AdminController::class, 'AdminLogoutPage'])->m
 
 Route::get('/admin/profile', [AdminController::class, 'AdminProfile'])->middleware(['auth','role:admin'])->name('admin.profile');
 Route::post('/admin/profile/update', [AdminController::class, 'AdminProfileUpdate'])->middleware(['auth','role:admin'])->name('admin.profile.update');
+Route::get('/category/all', [AdminController::class, 'CategoryAll'])->middleware(['auth','role:admin'])->name('category.all');
+Route::get('/category/add', [AdminController::class, 'CategoryAdd'])->middleware(['auth','role:admin'])->name('category.add');
+
 
 Route::post('/user/profile/update', [UserController::class, 'UserProfileUpdate'])->middleware(['auth','role:user'])->name('user.profile.update');
 
