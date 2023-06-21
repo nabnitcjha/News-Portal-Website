@@ -17,17 +17,6 @@ class AdminController extends Controller
         return view('admin.index', compact('adminData'));
     }
 
-    public function CategoryAll()
-    {
-        return view('admin.category_all');
-    }
-
-    public function CategoryAdd()
-    {
-        return view('admin.category_add');
-    }
-
-
     public function store(Request $request){
         $request->validate([
             'name' => 'required',

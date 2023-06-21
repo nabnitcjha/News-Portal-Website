@@ -2,8 +2,6 @@
 
 @section('admin')
  
-<div class="content">
-    <h1> category add</h1>
-</div>
+<h1> category all</h1>
 
 @endSection
