@@ -7,9 +7,6 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="header-title">Gutters</h4>
-                <p class="text-muted font-13">More complex layouts can also be created with the grid system.</p>
-
                 <form method="post" action="{{route('category.add')}}">
 
                     @csrf
