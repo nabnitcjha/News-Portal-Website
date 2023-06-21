@@ -2,17 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
     public function CategoryAll()
     {
-        return view('admin.category_all');
+        $adminData = User::find(auth()->user()->id);
+        return view('admin.category_all', compact('adminData'));
     }
 
     public function CategoryAdd()
     {
-        return view('admin.category_add');
+        $adminData = User::find(auth()->user()->id);
+        return view('admin.category_add', compact('adminData'));
     }
 }
