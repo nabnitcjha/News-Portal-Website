@@ -31,7 +31,7 @@
                                 <a href="{{route('category.all')}}">All Category</a>
                             </li>
                             <li>
-                                <a href="{{route('category.add')}}">Add Category</a>
+                                <a href="{{route('category.add.page')}}">Add Category</a>
                             </li>
                         </ul>
                     </div>

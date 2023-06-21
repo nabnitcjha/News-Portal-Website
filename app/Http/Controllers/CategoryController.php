@@ -15,9 +15,18 @@ class CategoryController extends Controller
         return view('admin.category_all', compact(['adminData','category']));
     }
 
-    public function CategoryAdd()
+    public function CategoryAddPage()
     {
         $adminData = User::find(auth()->user()->id);
         return view('admin.category_add', compact('adminData'));
+    }
+
+    public function CategoryAdd(Request $request)
+    {
+        $category = new Category();
+        $category->category_name = $request->category;
+        $category->category_slug = '/category';
+        $category->save();
+        return redirect()->back();
     }
 }
