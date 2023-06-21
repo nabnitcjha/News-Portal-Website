@@ -19,12 +19,12 @@ class AdminController extends Controller
 
     public function CategoryAll()
     {
-        return view('category.all');
+        return view('admin.category_all');
     }
 
     public function CategoryAdd()
     {
-        return view('category.add');
+        return view('admin.category_add');
     }
 
 
