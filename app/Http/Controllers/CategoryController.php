@@ -24,7 +24,7 @@ class CategoryController extends Controller
     public function CategoryAdd(Request $request)
     {
         $category = new Category();
-        $category->category_name = $request->category;
+        $category->category_name = $request->category_name;
         $category->category_slug = '/category';
         $category->save();
         return redirect()->back();
