@@ -22,6 +22,24 @@
                 <li>
                     <a href="#sidebarContacts" data-bs-toggle="collapse">
                         <i class="mdi mdi-book-account-outline"></i>
+                        <span> Category </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarContacts">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="contacts-list.html">All Category</a>
+                            </li>
+                            <li>
+                                <a href="contacts-profile.html">Add Category</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#sidebarContacts" data-bs-toggle="collapse">
+                        <i class="mdi mdi-book-account-outline"></i>
                         <span> Contacts </span>
                         <span class="menu-arrow"></span>
                     </a>
