@@ -12,13 +12,13 @@ class CategoryController extends Controller
     {
         $adminData = User::find(auth()->user()->id);
         $categories = Category::latest()->get();
-        return view('admin.category_all', compact(['adminData','categories']));
+        return view('admin.category.category_all', compact(['adminData','categories']));
     }
 
     public function CategoryAddPage()
     {
         $adminData = User::find(auth()->user()->id);
-        return view('admin.category_add', compact('adminData'));
+        return view('admin.category.category_add', compact('adminData'));
     }
 
     public function CategoryAdd(Request $request)
