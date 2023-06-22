@@ -42,7 +42,10 @@
                                 <tr>
                                     <td>{{$category->category_name}}</td>
                                     <td>{{$category->category_slug}}</td>
-                                    <td>delete</td>
+                                    <td>
+                                    <a type="button" class="btn btn-warning btn-lg waves-effect waves-light mb-4" href="{{route('category.add.page')}}">Edit</a>
+                                    <a type="button" class="btn btn-danger btn-lg waves-effect waves-light mb-4" href="{{route('category.add.page')}}">Delete</a>
+                                    </td>
                                 </tr>
                                 @endforeach
                             </tbody>
