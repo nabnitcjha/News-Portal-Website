@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
@@ -23,5 +24,12 @@ class SubCategoryController extends Controller
             );
     
             return redirect()->route('admin.subcategory.sub_category_all')->with($notification);
+    }
+
+    public function SubCategoryAll()
+    {
+        $adminData = User::find(auth()->user()->id);
+        $subcategories = SubCategory::latest()->get();
+        return view('admin.subcategory.sub_category_all', compact(['adminData','subcategories']));
     }
 }

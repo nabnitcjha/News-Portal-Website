@@ -51,7 +51,7 @@ Route::post('/category/add', [CategoryController::class, 'CategoryAdd'])->middle
 
 Route::get('/subcategory/add/page', [SubCategoryController::class, 'SubCategoryAddPage'])->middleware(['auth','role:admin'])->name('subcategory.add.page');
 Route::post('/subcategory/add', [SubCategoryController::class, 'SubCategoryAdd'])->middleware(['auth','role:admin'])->name('subcategory.add');
-
+Route::get('/subcategory/all', [SubCategoryController::class, 'SubCategoryAll'])->middleware(['auth','role:admin'])->name('subcategory.all');
 
 
 Route::post('/user/profile/update', [UserController::class, 'UserProfileUpdate'])->middleware(['auth','role:user'])->name('user.profile.update');
