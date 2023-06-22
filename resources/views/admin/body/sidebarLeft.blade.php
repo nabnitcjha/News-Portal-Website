@@ -40,6 +40,25 @@
                 <li>
                     <a href="#sidebarContacts" data-bs-toggle="collapse">
                         <i class="mdi mdi-book-account-outline"></i>
+                        <span> Sub Category </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <div class="collapse" id="sidebarContacts">
+                        <ul class="nav-second-level">
+                            <li>
+                                <a href="{{route('subcategory.all')}}">All SubCategory</a>
+                            </li>
+                            <li>
+                                <a href="{{route('subcategory.add.page')}}">Add SubCategory</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <li>
+                    <a href="#sidebarContacts" data-bs-toggle="collapse">
+                        <i class="mdi mdi-book-account-outline"></i>
                         <span> Contacts </span>
                         <span class="menu-arrow"></span>
                     </a>

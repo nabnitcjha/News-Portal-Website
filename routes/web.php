@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SubCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,6 +47,12 @@ Route::post('/admin/profile/update', [AdminController::class, 'AdminProfileUpdat
 Route::get('/category/all', [CategoryController::class, 'CategoryAll'])->middleware(['auth','role:admin'])->name('category.all');
 Route::get('/category/add/page', [CategoryController::class, 'CategoryAddPage'])->middleware(['auth','role:admin'])->name('category.add.page');
 Route::post('/category/add', [CategoryController::class, 'CategoryAdd'])->middleware(['auth','role:admin'])->name('category.add');
+
+
+Route::get('/subcategory/add/page', [SubCategoryController::class, 'SubCategoryAddPage'])->middleware(['auth','role:admin'])->name('subcategory.add.page');
+Route::post('/subcategory/add', [SubCategoryController::class, 'SubCategoryAdd'])->middleware(['auth','role:admin'])->name('subcategory.add');
+
+
 
 Route::post('/user/profile/update', [UserController::class, 'UserProfileUpdate'])->middleware(['auth','role:user'])->name('user.profile.update');
 
