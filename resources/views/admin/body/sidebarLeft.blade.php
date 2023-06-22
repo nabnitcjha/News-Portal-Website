@@ -38,12 +38,12 @@
                 </li>
 
                 <li>
-                    <a href="#sidebarContacts" data-bs-toggle="collapse">
+                    <a href="#subcategory" data-bs-toggle="collapse">
                         <i class="mdi mdi-book-account-outline"></i>
                         <span> Sub Category </span>
                         <span class="menu-arrow"></span>
                     </a>
-                    <div class="collapse" id="sidebarContacts">
+                    <div class="collapse" id="subcategory">
                         <ul class="nav-second-level">
                             <li>
                                 <a href="{{route('subcategory.all')}}">All SubCategory</a>
