@@ -25,7 +25,7 @@ class CategoryController extends Controller
     {
         $category = new Category();
         $category->category_name = $request->category_name;
-        $category->category_slug = '/category';
+        $category->category_slug = strtolower(str_replace(' ','-',$request->category_name));
         $category->save();
 
           $notification = array(
