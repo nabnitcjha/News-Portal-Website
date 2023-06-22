@@ -92,6 +92,7 @@
 
     <!-- App js -->
     <script src="{{asset('backend/assets/js/app.min.js')}}"></script>
+    <script src="{{asset('backend/assets/js/validate.min.js')}}"></script>
 
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/js/toastr.js"></script>
@@ -140,6 +141,7 @@
             @endif
         });
     </script>
+
 
 </body>
 
