@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 class SubCategoryController extends Controller
 {
     public function SubCategoryAddPage(){
-        return view('admin.subcategory.sub_category_add');
+        $adminData = User::find(auth()->user()->id);
+        return view('admin.subcategory.sub_category_add', compact(['adminData']));
     }
 
     public function SubCategoryAdd(Request $request){
