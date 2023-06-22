@@ -33,6 +33,6 @@ class CategoryController extends Controller
                 'alert-type'=>'warning'
             );
     
-            return back()->with($notification);
+            return redirect()->route('category.all')->with($notification);
     }
 }
