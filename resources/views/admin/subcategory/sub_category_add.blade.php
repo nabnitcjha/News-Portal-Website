@@ -1,44 +1,33 @@
 @extends('admin.admin_layout')
 
 @section('admin')
-
-<!-- Start Content-->
-<div class="container-fluid">
-
-    <!-- start page title -->
-    <div class="row">
-        <div class="col-12">
-            <div class="page-title-box">
-                <div class="page-title-right">
-                    <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Forms</a></li>
-                        <li class="breadcrumb-item active">Basic Elements</li>
-                    </ol>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-title-box">
+                    <div class="page-title-right">
+                        <ol class="breadcrumb m-0">
+                            <a type="button" class="btn btn-success btn-lg waves-effect waves-light mb-4" href="{{route('category.all')}}">All Category</a>
+                        </ol>
+                    </div>
+                    <h4 class="page-title">All SubCategory</h4>
                 </div>
-                <h4 class="page-title">Basic Elements</h4>
             </div>
         </div>
-    </div>
-    <!-- end page title -->
+        <!-- Form row -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post" action="{{route('subcategory.add')}}" id="add_category">
 
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
+                            @csrf
 
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <form>
-
-                                <div class="mb-3">
-                                    <label for="simpleinput" class="form-label">Text</label>
-                                    <input type="text" id="simpleinput" class="form-control">
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="example-select" class="form-label">Input Select</label>
+                            <div class="row">
+                            <div class="mb-3">
+                                    <label for="example-select" class="form-label">Category</label>
                                     <select class="form-select" id="example-select">
                                         <option>1</option>
                                         <option>2</option>
@@ -47,21 +36,52 @@
                                         <option>5</option>
                                     </select>
                                 </div>
-                            </form>
-                        </div> <!-- end col -->
 
+                                <div class="form-group col-md-6 mb-3">
+                                    <label for="subcategory_name" class="form-label">SubCategory Name</label>
+                                    <input type="text" name="subcategory_name" class="form-control" id="subcategory_name" placeholder="subcategory_name">
+                                </div>
 
-                    </div>
-                    <!-- end row-->
+                            </div>
 
-                </div> <!-- end card-body -->
-            </div> <!-- end card -->
-        </div><!-- end col -->
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Save</button>
+
+                        </form>
+
+                    </div> <!-- end card-body -->
+                </div> <!-- end card-->
+            </div> <!-- end col -->
+        </div>
+        <!-- end row -->
     </div>
-    <!-- end row -->
+</div>
 
-
-</div> <!-- container -->
-
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#add_category').validate({
+            rules: {
+                category_name: {
+                    required: true,
+                },
+            },
+            messages: {
+                category_name: {
+                    required: 'Please Enter Category Name',
+                },
+            },
+            errorElement: 'span',
+            errorPlacement: function(error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight: function(element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+            },
+            unhighlight: function(element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+            },
+        });
+    });
+</script>
 
 @endSection
