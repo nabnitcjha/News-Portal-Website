@@ -26,14 +26,12 @@
                             @csrf
 
                             <div class="row">
-                            <div class="mb-3">
+                                <div class="mb-3">
                                     <label for="example-select" class="form-label">Category</label>
                                     <select class="form-select" id="example-select">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        @foreach($categories as $category)
+                                        <option value="{{$category->id}}">{{$category->category_name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
 

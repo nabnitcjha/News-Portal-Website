@@ -12,7 +12,7 @@
                             <a type="button" class="btn btn-success btn-lg waves-effect waves-light mb-4" href="{{route('category.all')}}">All Category</a>
                         </ol>
                     </div>
-                    <h4 class="page-title">All Category</h4>
+                    <h4 class="page-title">Add Category</h4>
                 </div>
             </div>
         </div>
