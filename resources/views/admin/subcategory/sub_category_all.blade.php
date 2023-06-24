@@ -13,7 +13,7 @@
                 <div class="page-title-box">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <a type="button" class="btn btn-success btn-lg waves-effect waves-light mb-4" href="{{route('category.add.page')}}">Add Category</a>
+                            <a type="button" class="btn btn-success btn-lg waves-effect waves-light mb-4" href="{{route('subcategory.add.page')}}">Add SubCategory</a>
                         </ol>
                     </div>
                     <h4 class="page-title">Datatables</h4>
