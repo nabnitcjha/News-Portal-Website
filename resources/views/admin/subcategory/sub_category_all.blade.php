@@ -30,18 +30,18 @@
                         <table id="basic-datatable" class="table dt-responsive nowrap w-100">
                             <thead>
                                 <tr>
-                                    <th>Category Name</th>
-                                    <th>Category Slug</th>
+                                    <th>SubCategory Name</th>
+                                    <th>SubCategory Slug</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
 
 
                             <tbody>
-                                @foreach($categories as $category)
+                                @foreach($subcategories as $category)
                                 <tr>
-                                    <td>{{$category->category_name}}</td>
-                                    <td>{{$category->category_slug}}</td>
+                                    <td>{{$category->subcategory_name}}</td>
+                                    <td>{{$category->subcategory_slug}}</td>
                                     <td>
                                     <a type="button" class="btn btn-warning btn-lg waves-effect waves-light mb-4" href="{{route('category.add.page')}}">Edit</a>
                                     <a type="button" class="btn btn-danger btn-lg waves-effect waves-light mb-4" href="{{route('category.add.page')}}">Delete</a>

@@ -23,12 +23,13 @@ class SubCategoryController extends Controller
         $subcategory->save();
         $adminData = User::find(auth()->user()->id);
         $categories = Category::latest()->get();
+        $subcategories = SubCategory::latest()->get();
           $notification = array(
                 'message'=>'Category Save Successfully',
                 'alert-type'=>'warning'
             );
 
-            return view('admin.subcategory.sub_category_all', compact(['adminData','categories']))->with($notification);
+            return view('admin.subcategory.sub_category_all', compact(['adminData','categories','subcategories']))->with($notification);
             // return redirect()->route('subcategory.all')->with($notification,compact(['adminData','categories']));
     }
 
