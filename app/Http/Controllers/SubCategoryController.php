@@ -29,8 +29,8 @@ class SubCategoryController extends Controller
                 'alert-type'=>'warning'
             );
 
-            return view('admin.subcategory.sub_category_all', compact(['adminData','categories','subcategories']))->with($notification);
-            // return redirect()->route('subcategory.all')->with($notification,compact(['adminData','categories']));
+            // return view('admin.subcategory.sub_category_all', compact(['adminData','categories','subcategories']))->with($notification);
+            return redirect()->route('subcategory.all')->with($notification,compact(['adminData','categories']));
     }
 
     public function SubCategoryAll()
