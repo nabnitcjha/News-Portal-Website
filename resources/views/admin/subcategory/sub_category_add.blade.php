@@ -28,7 +28,7 @@
                             <div class="row">
                                 <div class="mb-3">
                                     <label for="example-select" class="form-label">Category</label>
-                                    <select class="form-select" id="example-select">
+                                    <select class="form-select" id="example-select" name="category_id">
                                         @foreach($categories as $category)
                                         <option value="{{$category->id}}">{{$category->category_name}}</option>
                                         @endforeach
